@@ -123,9 +123,7 @@ else:
             Quero conversar com a Marta Neris
         </a>
         """, unsafe_allow_html=True)
-        if st.button("", key="btn_hidden_whatsapp", help="Clique invisível para registrar evento"):
-            registrar_evento(st.session_state, "clicou_whatsapp")
-
+        
     with col2:
         st.markdown(f"""
         <style>
@@ -161,5 +159,4 @@ else:
             <span>por 12x de R$19,70</span>
         </a>
         """, unsafe_allow_html=True)
-        if st.button("", key="btn_hidden_eduzz", help="Clique invisível para registrar evento"):
-            registrar_evento(st.session_state, "clicou_eduzz")
+        
