@@ -59,7 +59,6 @@ if etapa < len(perguntas):
     st.markdown(centralizar_html(
         f"<div style='background:#fffbe5;padding:34px 22px 24px 22px;border-radius:12px;margin-bottom:12px;"
         f"box-shadow:0 3px 16px #e5e3eb52;'>"
-        f"<h3 style='text-align:center;color:#4a224f;margin-bottom:16px;'>Pergunta {etapa + 1} de {len(perguntas)}</h3>"
         f"<p style='font-size:1.15em;text-align:center;color:#673a5e;font-weight:bold;margin-bottom:22px;'>"
         f"{perguntas[etapa]}</p></div>"
     ), unsafe_allow_html=True)
