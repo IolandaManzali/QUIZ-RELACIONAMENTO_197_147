@@ -7,7 +7,29 @@ st.set_page_config(page_title="Quiz Relacionamentos", layout='centered')
 URL_WHATSAPP = "https://wa.me/5511970162258?text=Olá!%20Fiz%20o%20quiz%20e%20quero%20ajuda%20para%20transformar%20meus%20relacionamentos."
 URL_EDUZZ = "https://chk.eduzz.com/8WPAKY6YWP"
 
-# TAG/PIXEL
+# ==== INSERIR PIXEL META (FACEBOOK) ====
+st.markdown("""
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2798463723694078');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2798463723694078&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+""", unsafe_allow_html=True)
+
+
+# ==== INSERIR GOOGLE ANALYTICS 4 ====
 st.markdown("""
 <script async src="https://www.googletagmanager.com/gtag/js?id=SEU_ID_GA4"></script>
 <script>
@@ -17,7 +39,6 @@ gtag('js', new Date());
 gtag('config', 'SEU_ID_GA4');
 </script>
 """, unsafe_allow_html=True)
-
 
 def centralizar_html(html):
     return f"""
