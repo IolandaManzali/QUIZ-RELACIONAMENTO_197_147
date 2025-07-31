@@ -5,7 +5,7 @@ from eventos import registrar_evento
 st.set_page_config(page_title="Quiz Relacionamentos", layout='centered')
 
 URL_WHATSAPP = "https://wa.me/5511970162258?text=Olá!%20Fiz%20o%20quiz%20e%20quero%20ajuda%20para%20transformar%20meus%20relacionamentos."
-URL_EDUZZ = "https://pay.eduzz.com/SEULINKDECOMPRA"
+URL_EDUZZ = "https://chk.eduzz.com/8WPAKY6YWP"
 
 # TAG/PIXEL
 st.markdown("""
@@ -155,7 +155,7 @@ else:
         </style>
         <a href="{URL_EDUZZ}" target="_blank" class="btn-eduzz" id="btn-eduzz">
             Quero garantir Minha Vaga na Eduzz
-            <span>por 12x de R$19,70</span>
+            <span>por 12x de R$20,14</span>
         </a>
         """, unsafe_allow_html=True)
         
